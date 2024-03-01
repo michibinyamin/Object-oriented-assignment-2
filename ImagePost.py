@@ -1,4 +1,6 @@
 from Post import Post
+import matplotlib.pyplot as plt
+from PIL import Image
 
 
 class ImagePost(Post):
@@ -8,6 +10,10 @@ class ImagePost(Post):
 
     def display(self):
         print("\n"+self.photo)
+        #image = Image.open(self.photo)
+        #plt.imshow(image)
+        #plt.axis('off')  # Turn off axis
+        #plt.show()
 
     def __str__(self):
         return f"{self.uploader.name} posted a picture\n"

@@ -3,7 +3,7 @@ from Post import Post
 
 class SalePost(Post):
     def __init__(self, user, t, price, location):
-        super().__init__(user)  # Should be implemented here?
+        super().__init__(user)  # Initialize user
         self.item_type = t    # type of item (string)
         self.price = price  # The price (int)
         self.location = location    # Item location (string)
