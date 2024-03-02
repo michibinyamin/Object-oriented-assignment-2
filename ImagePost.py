@@ -15,7 +15,7 @@ class ImagePost(Post):
         #plt.axis('off')  # Turn off axis
         #plt.show()
     def display(self):
-        print("\nShows picture")
+        print("Shows picture")
         try:
             # Display image
             img_matplotlib = plt.imread(self.photo)

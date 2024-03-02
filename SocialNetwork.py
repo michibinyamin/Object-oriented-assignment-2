@@ -50,8 +50,8 @@ class SocialNetwork:
         print("Wrong username")
 
     def __str__(self):
-        st = f"{self.network_type} social network:\n"
+        st = f"{self.network_type} social network:"
         for user in self.users:
-            st = st + user.__str__()+"\n"
+            st = st + "\n" + user.__str__()
         return st
 

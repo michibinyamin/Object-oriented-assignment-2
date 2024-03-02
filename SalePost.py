@@ -22,15 +22,15 @@ class SalePost(Post):
         if self.uploader.is_online:  # Make sure user is online
             if self.uploader.get_password() == password:
                 self.__availability = False
-                print(f"{self.uploader.name}'s product is sold!")
+                print(f"{self.uploader.name}'s product is sold")
         else:
             print("You are offline")
 
     def __str__(self):
         if self.__availability:
             return (f"{self.uploader.name} posted a product for sale:\nFor sale! {self.item_type}, price: {self.price},"
-                    f" pickup from: {self.location}")
+                    f" pickup from: {self.location}\n")
         else:
             return (f"{self.uploader.name} posted a product for sale:\nSold! {self.item_type}, price: {self.price},"
-                    f" pickup from: {self.location}")
+                    f" pickup from: {self.location}\n")
 
