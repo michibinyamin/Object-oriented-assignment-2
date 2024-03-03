@@ -51,13 +51,13 @@ class User:
                 return None
 
             self.number_of_posts = self.number_of_posts + 1
-            self.__notify_followers()   # Notify all the users followers
+            self.__notify_followers()   # Notify all the users followers (with Observer design pattern)
             print(post)  # Print the post
             return post     # Return the Chosen post
         else:
             print("You are offline")
 
-    # Implementing observer design pattern to update all
+    # Implementing Observer design pattern to update all
     # the users followers that post has been uploaded
     def __notify_followers(self):
         for u in self.followers:

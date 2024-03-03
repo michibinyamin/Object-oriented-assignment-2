@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 
+# Objects created with Factory design pattern in user when chosen to create imagepost object
 class ImagePost(Post):
     def __init__(self, user, photo):
         super().__init__(user)  # Should be implemented here?

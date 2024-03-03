@@ -1,6 +1,7 @@
 from Post import Post
 
 
+# Objects created with Factory design pattern in user when chosen to create textpost object
 class TextPost(Post):
     def __init__(self, user, text):
         super().__init__(user)  # Initialize user

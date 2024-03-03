@@ -1,6 +1,7 @@
 from Post import Post
 
 
+# Objects created with Factory design pattern in user when chosen to create salepost object
 class SalePost(Post):
     def __init__(self, user, t, price, location):
         super().__init__(user)  # Initialize user

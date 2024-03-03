@@ -1,5 +1,4 @@
-
-
+# Objects created with Factory design pattern in user
 class Post:
     def __init__(self, user):
         self.likes = []  # List of users who liked
